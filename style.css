@@ -144,3 +144,22 @@ a:hover {
   text-decoration: underline;
 }
 
+#links ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#links li {
+  margin-bottom: 10px;
+}
+
+#links a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#links a:hover {
+  text-decoration: underline;
+}
+
