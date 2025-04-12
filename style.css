@@ -288,4 +288,132 @@ header p {
   margin: 4px 0;
   font-size: 1rem;
 }
+/* ======= Section Headings ======= */
+.content-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #004080;
+  margin-bottom: 40px;
+}
+
+/* ======= Experience & Publication Boxes ======= */
+.experience-item,
+.publication-item {
+  background-color: #ffffff;
+  border-left: 6px solid #004080;
+  padding: 20px 25px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 64, 128, 0.08);
+}
+
+.experience-item h3,
+.publication-item h3 {
+  font-size: 1.4rem;
+  color: #333333;
+}
+
+.institution {
+  font-weight: bold;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.experience-details,
+.publication-details {
+  margin: 5px 0 10px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.year {
+  font-style: italic;
+  color: #888888;
+  margin-top: 10px;
+}
+
+.author-role {
+  font-style: italic;
+  color: #0066cc;
+}
+
+/* ======= Contact Section ======= */
+#contact .contact-box {
+  background-color: #f0f8ff;
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 64, 128, 0.1);
+}
+
+#contact p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#contact a {
+  color: #004080;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+.note {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #777;
+  margin-top: 20px;
+  text-align: center;
+}
+/* Teaching Section Styling */
+#teaching h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #004080;
+  margin-bottom: 40px;
+}
+
+.teaching-item {
+  background-color: #ffffff;
+  border-left: 6px solid #004080;
+  padding: 20px 25px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 64, 128, 0.08);
+}
+
+.teaching-item h3 {
+  font-size: 1.5rem;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.institution {
+  font-weight: bold;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.teaching-details p,
+.teaching-details ul {
+  margin: 5px 0 10px;
+  padding-left: 20px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.teaching-details ul {
+  list-style: disc;
+}
+
+.year {
+  font-style: italic;
+  color: #777;
+  font-size: 0.95rem;
+}
 
