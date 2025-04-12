@@ -205,3 +205,8 @@ nav {
   }
 }
 
+.content-section {
+  padding: 2rem;
+  transition: opacity 0.5s ease-in-out;
+}
+
