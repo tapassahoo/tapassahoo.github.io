@@ -9,13 +9,13 @@ body {
 
 /* Navigation Bar */
 nav {
-  background-color: #004080;
+  background-color: #004080;  /* A blue background for better visibility */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 10px 0;
-  z-index: 1000;
+  padding: 15px 0;
+  z-index: 1000;  /* Ensures it stays on top of other content */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -35,7 +35,7 @@ nav ul li {
 
 /* Navigation Links */
 nav ul li a {
-  color: white;
+  color: Yellow;
   text-decoration: none;
   font-size: 1.1rem;
   text-transform: uppercase;
