@@ -1,11 +1,2 @@
-title: My Website
-description: A site styled like LaTeX
-baseurl: "" # or your subdirectory
-url: "https://tapassahoo.github.io"
-
-theme: minima # or your custom theme
+theme: minima
 markdown: kramdown
-
-# Optional: Enable Sass/SCSS processing
-sass:
-  style: compressed
