@@ -95,10 +95,11 @@ body {
 
 /* Welcome Section with Background Image */
 #home {
-  background-image: url('background-image.jpg'); /* Replace 'your-image.jpg' with the path to your image */
+  background-image: url('backgrounf-image.jpg'); /* Replace with your image path */
   background-size: cover; /* Cover the whole section */
   background-position: center center; /* Center the image */
-  background-attachment: fixed; /* Keep the image fixed while scrolling */
+  background-attachment: fixed; /* Optional: Parallax effect */
+  background-color: #333; /* Fallback color */
   padding: 100px 20px; /* Add padding to create space around content */
   color: white; /* Ensure text is visible on dark background */
   text-align: center;
