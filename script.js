@@ -1,16 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const links = document.querySelectorAll("nav ul li a");
   const sections = document.querySelectorAll("section");
+  const links = document.querySelectorAll("nav a");
 
-  sections[0].classList.add("active");
+  function showSection(id) {
+    sections.forEach(section => {
+      section.style.display = (section.id === id) ? "block" : "none";
+    });
+  }
+
+  // Initially show only the #home section
+  showSection("home");
 
   links.forEach(link => {
     link.addEventListener("click", function (e) {
-      e.preventDefault();
+      e.preventDefault(); // Stop default anchor behavior
       const targetId = this.getAttribute("href").substring(1);
-
-      sections.forEach(section => section.classList.remove("active"));
-      document.getElementById(targetId).classList.add("active");
+      showSection(targetId);
     });
   });
 });

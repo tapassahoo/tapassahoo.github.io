@@ -140,6 +140,11 @@ main {
   background-color: #f9f9f9;
 }
 
+section {
+  display: none;
+  padding: 80px 20px;
+}
+
 .section {
   margin-bottom: 40px;
   padding: 20px;
@@ -253,12 +258,3 @@ a:hover {
   text-align: center;
   font-style: italic;
 }
-
-section {
-  display: none;
-}
-
-section.active {
-  display: block;
-}
-
