@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Homepage</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<body>
   <!-- Navigation Bar -->
   <nav>
     <div class="nav-container">
@@ -24,34 +23,10 @@
     </div>
   </nav>
 
-	<!--
-  <section id="home" class="content-section">Welcome to the Quantum Lab</section>
-  <section id="education" class="content-section" style="display: none;">Education Info</section>
-  <section id="experience" class="content-section" style="display: none;">Experience Info</section>
-  <section id="contact" class="content-section" style="display: none;">Contact Info</section>
-	-->
-
-	<!--
-  <nav>
-    <div class="nav-container">
-      <div class="logo">My Website</div>
-      <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
-      <ul id="nav-links">
-        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
-        <li><a href="#education" onclick="toggleMenu()">Education</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-	-->
-
   <!-- Home Section -->
-  <section id="home">
-    <div class="content-section">
-      <h1>Welcome to My Homepage</h1>
-      <p>Your journey into the world of quantum molecular dynamics starts here.</p>
-    </div>
+  <section id="home" class="content-section">
+    <h1>Welcome to My Homepage</h1>
+    <p>Your journey into the world of quantum molecular dynamics starts here.</p>
   </section>
 
   <!-- Education Section -->
@@ -64,22 +39,31 @@
   <!-- Experience Section -->
   <section id="experience" class="content-section" style="display: none;">
     <h2>Experience</h2>
-    <p>Assistant Professor (Temporary) at NIT Raipur</p>
-    <p>Guest Lecturer / Research Mentor at S. N. Bose National Centre for Basic Sciences, Kolkata</p>
+    <p>Postdoctoral research at S.N. Bose National Centre, Weizmann Institute, and University of Waterloo.</p>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="content-section" style="display: none;">
     <h2>Contact</h2>
     <p>Email: example@example.com</p>
-    <p>Phone: 123-456-7890</p>
   </section>
 
-  <footer>
-    <p>&copy; 2025 My Website</p>
-  </footer>
+  <!-- JavaScript -->
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav-links").classList.toggle("active");
+    }
 
-  <script src="script.js"></script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll(".content-section");
+      sections.forEach(section => {
+        section.style.display = "none";
+      });
+
+      document.getElementById(sectionId).style.display = "block";
+      document.getElementById("nav-links").classList.remove("active");
+    }
+  </script>
 </body>
 </html>
 
