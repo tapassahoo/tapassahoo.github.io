@@ -1,13 +1,17 @@
-/* Global Styles */
-body {
-  font-family: 'Arial', sans-serif;
+/* Reset and Global Styles */
+body, h1, h2, p, ul {
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
   line-height: 1.6;
   color: #333;
 }
 
-/* Navigation Bar */
 nav {
   background-color: #004080;
   position: fixed;
@@ -15,99 +19,121 @@ nav {
   left: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Inner Container with Limited Width */
 .nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 15px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Logo Styling */
 .logo {
-  color: #fff;
+  color: white;
   font-size: 1.8rem;
   font-weight: bold;
 }
 
-nav ul {
-  list-style: none;
+ul {
   display: flex;
-  margin: 0;
-  padding: 0;
+  list-style: none;
 }
 
-nav ul li {
+ul li {
   margin-left: 20px;
 }
 
-nav ul li a {
-  color: #fff;
+ul li a {
+  color: white;
   text-decoration: none;
   font-size: 1rem;
   text-transform: uppercase;
 }
 
-nav ul li a:hover {
+ul li a:hover {
   color: #ffcc00;
 }
 
-/* Hamburger Menu (Visible on mobile) */
 .menu-toggle {
   display: none;
-  font-size: 1.8rem;
-  color: yellow;
+  font-size: 2rem;
+  color: white;
   cursor: pointer;
 }
 
-/* Responsive styles */
+#home {
+  background-image: url('background-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 100px 20px;
+  color: white;
+  text-align: center;
+}
+
+#home h1 {
+  font-size: 2.5rem;
+}
+
+#home p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #004080;
+}
+
+/* Footer */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
   nav ul {
     display: none;
     flex-direction: column;
     width: 100%;
     background-color: #004080;
+    position: absolute;
+    top: 60px;
+    left: 0;
   }
 
   nav ul.show {
     display: flex;
   }
 
-  nav ul li {
-    margin: 10px 0;
-    text-align: center;
-  }
-
   .menu-toggle {
     display: block;
   }
-}
 
-/* Push body down to prevent overlap */
-body {
-  padding-top: 70px;
-}
+  #home h1 {
+    font-size: 1.8rem;
+  }
 
-/* Welcome Section with Background Image */
-#home {
-  background-image: url('backgrounf-image.jpg'); /* Replace with your image path */
-  background-size: cover; /* Cover the whole section */
-  background-position: center center; /* Center the image */
-  background-attachment: fixed; /* Optional: Parallax effect */
-  background-color: #333; /* Fallback color */
-  padding: 100px 20px; /* Add padding to create space around content */
-  color: white; /* Ensure text is visible on dark background */
-  text-align: center;
-}
+  #home p {
+    font-size: 1rem;
+  }
 
-/* Section Styles */
-section {
-  padding: 40px 20px;
-  background-color: #f9f9f9;
+  section {
+    padding: 20px;
+  }
 }
 

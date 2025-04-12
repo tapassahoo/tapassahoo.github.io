@@ -4,44 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Quantum Molecular Dynamics Lab</title>
+  <title>Homepage</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <!-- Navigation Bar -->
   <nav>
     <div class="nav-container">
-      <!-- Logo Section -->
-      <div class="logo">
-        <a href="#home">Quantum Lab</a>
-      </div>
-
-      <!-- Navigation Links (Desktop) -->
-      <ul class="nav-links">
+      <div class="logo">My Website</div>
+      <ul id="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="#teaching">Teaching</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#group">Group</a></li>
-        <li><a href="#links">Useful Links</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      
-      <!-- Hamburger Menu (For Mobile) -->
-      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
     </div>
   </nav>
 
-  <!-- Main Content -->
-  <main>
-    <section id="home">
-      <h2>Welcome</h2>
-      <p>Welcome to the Quantum Molecular Dynamics Lab. Our focus lies in quantum dynamics, entanglement entropy, and algorithmic developments for chemical systems.</p>
-    </section>
-    <!-- Other sections would go here -->
-  </main>
+  <!-- Home Section -->
+  <section id="home">
+    <div class="welcome-container">
+      <h1>Welcome to My Homepage</h1>
+      <p>Your journey into the world of quantum molecular dynamics starts here.</p>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <p>B.Sc. in Chemistry (Honors) from Ramakrishna Mission Vivekananda Centenary College, Rahara</p>
+    <p>M.Sc. in Physical Chemistry from Rajabazar Science College</p>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <p>Assistant Professor (Temporary) at NIT Raipur</p>
+    <p>Guest Lecturer / Research Mentor at S. N. Bose National Centre for Basic Sciences, Kolkata</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: example@example.com</p>
+    <p>Phone: 123-456-7890</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
