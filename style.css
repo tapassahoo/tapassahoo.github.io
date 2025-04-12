@@ -52,6 +52,10 @@ nav ul li a {
   text-transform: uppercase;
 }
 
+nav ul li a.active {
+  border-bottom: 2px solid #ffcc00;
+}
+
 nav ul li a:hover {
   color: #ffcc00;
 }
@@ -96,6 +100,10 @@ body {
 section {
   padding: 40px 20px;
   background-color: #f9f9f9;
+}
+
+section:nth-child(even) {
+  background-color: #fff;
 }
 
 /* Header Styles */
@@ -159,6 +167,12 @@ section {
   color: #004080;
 }
 
+.section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
 ul {
   list-style-type: none;
   padding-left: 0;
@@ -183,6 +197,17 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+
+p {
+  margin-bottom: 1em;
+  font-size: 1.1rem;
+}
+
+li {
+  line-height: 1.6;
+}
+
 
 footer p {
   margin: 0;
@@ -257,4 +282,8 @@ a:hover {
   margin-top: 2rem;
   text-align: center;
   font-style: italic;
+}
+
+html {
+  scroll-behavior: smooth;
 }
