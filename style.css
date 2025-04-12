@@ -7,22 +7,25 @@ body {
   color: #333;
 }
 
-/* Base Navigation Styles */
+/* Navigation Bar */
 nav {
   background-color: #004080;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100%; /* Keep full width */
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Inner Container with Limited Width */
 .nav-container {
+  max-width: 1200px; /* Adjust as needed (e.g., 1000px or 960px) */
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 10px 20px;
 }
 
 .logo {
