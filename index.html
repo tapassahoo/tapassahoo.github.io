@@ -13,6 +13,27 @@
   <!-- Navigation Bar -->
   <nav>
     <div class="nav-container">
+      <div class="logo">Quantum Lab</div>
+      <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+      <ul id="nav-links">
+        <li><a href="#" onclick="showSection('home')">Home</a></li>
+        <li><a href="#" onclick="showSection('education')">Education</a></li>
+        <li><a href="#" onclick="showSection('experience')">Experience</a></li>
+        <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+	<!--
+  <section id="home" class="content-section">Welcome to the Quantum Lab</section>
+  <section id="education" class="content-section" style="display: none;">Education Info</section>
+  <section id="experience" class="content-section" style="display: none;">Experience Info</section>
+  <section id="contact" class="content-section" style="display: none;">Contact Info</section>
+	-->
+
+	<!--
+  <nav>
+    <div class="nav-container">
       <div class="logo">My Website</div>
       <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
       <ul id="nav-links">
@@ -23,31 +44,32 @@
       </ul>
     </div>
   </nav>
+	-->
 
   <!-- Home Section -->
   <section id="home">
-    <div class="welcome-container">
+    <div class="content-section">
       <h1>Welcome to My Homepage</h1>
       <p>Your journey into the world of quantum molecular dynamics starts here.</p>
     </div>
   </section>
 
   <!-- Education Section -->
-  <section id="education">
+  <section id="education" class="content-section" style="display: none;">
     <h2>Education</h2>
     <p>B.Sc. in Chemistry (Honors) from Ramakrishna Mission Vivekananda Centenary College, Rahara</p>
     <p>M.Sc. in Physical Chemistry from Rajabazar Science College</p>
   </section>
 
   <!-- Experience Section -->
-  <section id="experience">
+  <section id="experience" class="content-section" style="display: none;">
     <h2>Experience</h2>
     <p>Assistant Professor (Temporary) at NIT Raipur</p>
     <p>Guest Lecturer / Research Mentor at S. N. Bose National Centre for Basic Sciences, Kolkata</p>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
+  <section id="contact" class="content-section" style="display: none;">
     <h2>Contact</h2>
     <p>Email: example@example.com</p>
     <p>Phone: 123-456-7890</p>
