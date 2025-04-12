@@ -1,4 +1,6 @@
-# ⚡ Dr. Tapas Sahoo  
+<!--# 
+⚡ Dr. Tapas Sahoo
+-->  
 
 🚀 **Quantum Molecular Dynamics | Computational Chemistry | HPC Simulations**  
 
