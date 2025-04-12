@@ -1,4 +1,11 @@
+title: My Website
+description: A site styled like LaTeX
+baseurl: "" # or your subdirectory
+url: "https://yourusername.github.io"
+
+theme: minima # or your custom theme
 markdown: kramdown
-theme: minima
+
+# Optional: Enable Sass/SCSS processing
 sass:
   style: compressed
