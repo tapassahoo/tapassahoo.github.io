@@ -11,7 +11,8 @@
   <!-- Navigation Bar -->
   <nav>
     <ul>
-      <li><a href="#" onclick="showSection('about')">About</a></li>
+      <!--<li><a href="#" onclick="showSection('about')">About</a></li>-->
+      <li><a href="#" onclick="showSection('home')">Home</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#teaching">Teaching</a></li>
@@ -40,6 +41,11 @@
 
   <!-- Main Content -->
   <main>
+ <section id="home" class="section active">
+    <h2>Welcome</h2>
+    <p>Welcome to the Quantum Molecular Dynamics Lab. Our focus lies in quantum dynamics, entanglement entropy, and algorithmic developments for chemical systems.</p>
+  </section>
+
     <!-- About Me Section -->
     <section id="about" class="section active">
       <h2>About Me</h2>
@@ -249,6 +255,19 @@
   <footer>
     <p>&copy; 2025 Dr. Tapas Sahoo. All rights reserved.</p>
   </footer>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => section.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+
+    // Optional: Open 'home' on first load
+    window.onload = function () {
+      showSection('home');
+    }
+  </script>
 
 </body>
 </html>
