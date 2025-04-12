@@ -5,7 +5,6 @@ body {
   padding: 0;
   line-height: 1.6;
   color: #333;
-  background-color: #f4f7fa;
 }
 
 /* Navigation Bar */
@@ -21,7 +20,7 @@ nav {
 
 /* Inner Container with Limited Width */
 .nav-container {
-  max-width: 1200px;
+  max-width: 1200px; /* Adjust as needed (e.g., 1000px or 960px) */
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -51,6 +50,10 @@ nav ul li a {
   text-decoration: none;
   font-size: 1rem;
   text-transform: uppercase;
+}
+
+nav ul li a.active {
+  border-bottom: 2px solid #ffcc00;
 }
 
 nav ul li a:hover {
@@ -93,164 +96,14 @@ body {
   padding-top: 70px;
 }
 
-/* Section General Style */
-.content-section {
-  padding: 60px 20px;
-  background-color: #f4f7fa;
-  color: #333;
-  max-width: 1000px;
-  margin: 0 auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+/* Section Styles */
+section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
 }
 
-/* Headings */
-.content-section h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  color: #004080;
-  font-weight: 700;
-  border-bottom: 2px solid #004080;
-  display: inline-block;
-  padding-bottom: 10px;
-}
-
-/* Individual Item */
-.content-item {
-  margin-bottom: 40px;
-  background: #fff;
-  padding: 25px;
-  border-left: 5px solid #004080;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 64, 128, 0.08);
-  transition: transform 0.3s ease;
-}
-
-.content-item:hover {
-  transform: translateY(-5px);
-}
-
-/* Title and Institution */
-.content-item h3 {
-  margin: 0;
-  font-size: 1.4rem;
-  color: #00264d;
-}
-
-.content-item .institution {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #555;
-  margin: 6px 0 12px 0;
-}
-
-/* Details and List */
-.content-item .details {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #444;
-}
-
-.content-item ul {
-  list-style-type: disc;
-  margin-left: 20px;
-  margin-top: 10px;
-}
-
-/* Year */
-.content-item .year {
-  font-size: 0.95rem;
-  color: #888;
-  margin-top: 10px;
-  font-style: italic;
-}
-
-/* Footer Styles */
-footer {
-  background-color: #004080;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-
-footer p {
-  margin: 0;
-  font-size: 1rem;
-}
-
-/* Links */
-a {
-  color: #004080;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Section Specific Styling */
-#links ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-#links li {
-  margin-bottom: 10px;
-}
-
-#links a {
-  color: #1a73e8;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-#links a:hover {
-  text-decoration: underline;
-}
-
-.collab-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-.collab-card {
-  background: #f9f9f9;
-  border-radius: 12px;
-  padding: 1rem;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.collab-card img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 0.75rem;
-  border: 2px solid #ddd;
-}
-
-.collab-card h3 {
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-.collab-card p {
-  font-size: 0.9rem;
-  color: #555;
-}
-
-.collab-note {
-  margin-top: 2rem;
-  text-align: center;
-  font-style: italic;
+section:nth-child(even) {
+  background-color: #fff;
 }
 
 /* Header Styles */
@@ -289,3 +142,218 @@ header p {
   font-size: 1rem;
 }
 
+/* Section Styles */
+main {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+section {
+  display: none;
+  padding: 80px 20px;
+}
+
+.section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.section h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #004080;
+}
+
+.section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.content-section {
+  padding: 2rem;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+}
+
+.education-item {
+  margin-bottom: 1.8rem;
+  padding-left: 1rem;
+  border-left: 4px solid #3498db;
+}
+
+.education-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.2rem;
+  color: #34495e;
+}
+
+.institution {
+  font-weight: 500;
+  color: #555;
+}
+
+.details {
+  font-style: italic;
+  color: #777;
+  margin: 0.3rem 0;
+}
+
+.year {
+  color: #888;
+  font-size: 0.95rem;
+}
+
+.experience-item {
+  margin-bottom: 1.8rem;
+  padding-left: 1rem;
+  border-left: 4px solid #e67e22;
+}
+
+.publication-list {
+  list-style: disc;
+  padding-left: 2rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.publication-list li {
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin: 5px 0;
+  font-size: 1.1rem;
+}
+
+ul li em {
+  color: #777;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+
+p {
+  margin-bottom: 1em;
+  font-size: 1.1rem;
+}
+
+li {
+  line-height: 1.6;
+}
+
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Links */
+a {
+  color: #004080;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#links ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#links li {
+  margin-bottom: 10px;
+}
+
+#links a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#links a:hover {
+  text-decoration: underline;
+}
+
+.collab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.collab-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.collab-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0.75rem;
+  border: 2px solid #ddd;
+}
+
+.collab-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.collab-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.collab-note {
+  margin-top: 2rem;
+  text-align: center;
+  font-style: italic;
+}
+
+html {
+  scroll-behavior: smooth;
+}
