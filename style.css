@@ -1,0 +1,88 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222;
+  --accent-color: #2a6592;
+  --heading-color: #1e3d59;
+  --border-color: #ccc;
+  --font-serif: 'Georgia', serif;
+}
+
+body {
+  font-family: var(--font-serif);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  max-width: 900px;
+  margin: auto;
+  padding: 2em;
+}
+
+h1, h2, h3 {
+  color: var(--heading-color);
+  margin-top: 1.5em;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 0.2em;
+}
+
+h2 {
+  font-size: 1.5em;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.2em;
+  margin-bottom: 1em;
+}
+
+.contact {
+  text-align: center;
+  font-size: 0.95em;
+  color: var(--accent-color);
+  margin-bottom: 2em;
+}
+
+p {
+  text-indent: 2em;
+  text-align: justify;
+  margin-bottom: 1em;
+}
+
+ul {
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+.section {
+  margin-bottom: 2em;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  margin-top: 4em;
+  text-align: center;
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #1e1e1e;
+    --text-color: #ddd;
+    --heading-color: #e0e0e0;
+    --border-color: #444;
+    --accent-color: #5ba9e1;
+  }
+}
