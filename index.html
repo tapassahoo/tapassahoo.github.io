@@ -9,20 +9,23 @@
 <body>
 
   <!-- Navigation Bar -->
-  <nav>
-    <ul>
-      <!--<li><a href="#" onclick="showSection('about')">About</a></li>-->
-      <li><a href="#" onclick="showSection('home')">Home</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#teaching">Teaching</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#group">Group</a></li>
-      <li><a href="#links">Useful Links</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+	<nav>
+	  <div class="nav-container">
+		<div class="logo">MySite</div>
+		<div class="menu-toggle" id="menu-toggle">&#9776;</div> <!-- hamburger -->
+		<ul id="nav-links">
+		  <li><a href="#home">Home</a></li>
+		  <li><a href="#education">Education</a></li>
+		  <li><a href="#experience">Experience</a></li>
+		  <li><a href="#teaching">Teaching</a></li>
+		  <li><a href="#research">Research</a></li>
+		  <li><a href="#publications">Publications</a></li>
+		  <li><a href="#group">Group</a></li>
+		  <li><a href="#links">Useful Links</a></li>
+		  <li><a href="#contact">Contact</a></li>
+		</ul>
+	  </div>
+	</nav>
 
   <!-- Header with Background Image -->
   <header>
@@ -258,6 +261,13 @@
     <p>&copy; 2025 Dr. Tapas Sahoo. All rights reserved.</p>
   </footer>
 
+	<script>
+	  document.getElementById("menu-toggle").onclick = function () {
+		document.getElementById("nav-links").classList.toggle("show");
+	  };
+	</script>
+
+<!--
   <script>
     function showSection(id) {
       const sections = document.querySelectorAll('.section');
@@ -270,6 +280,7 @@
       showSection('home');
     }
   </script>
+-->
 
 </body>
 </html>

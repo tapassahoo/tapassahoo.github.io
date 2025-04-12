@@ -7,55 +7,86 @@ body {
   color: #333;
 }
 
-/* Navigation Bar */
+/* Base Navigation Styles */
 nav {
-  background-color: #004080;  /* A blue background for the navigation bar */
+  background-color: #004080;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 15px 0;
-  z-index: 1000;  /* Ensures it stays on top of other content */
+  z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Navigation Menu */
-nav ul {
+.nav-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
   list-style: none;
+  display: flex;
   margin: 0;
   padding: 0;
 }
 
 nav ul li {
-  margin: 0 20px;
+  margin-left: 20px;
 }
 
 nav ul li a {
-  color: #ffffff;  /* Set the initial text color to white */
+  color: #fff;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-transform: uppercase;
-  font-weight: bold;  /* Optional: make the text bold */
 }
 
-/* Hover Effect */
 nav ul li a:hover {
-  color: #f4f4f4;  /* Lighter white on hover */
-  border-bottom: 2px solid #f4f4f4;  /* Optional: Underline effect on hover */
+  color: #ffcc00;
 }
 
-/* Active/Focus Link Style */
-nav ul li a:focus,
-nav ul li a:active {
-  color: #ffcc00;  /* Change color when active or focused (yellow for emphasis) */
-  border-bottom: 2px solid #ffcc00;  /* Underline with a golden color */
+/* Hamburger Menu - Hidden on desktop */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
 }
 
-/* Add some padding to the body so content doesn't overlap with the fixed nav */
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #004080;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Push body down to prevent overlap */
 body {
-  padding-top: 80px;  /* Increase to ensure content doesn't overlap with nav */
+  padding-top: 70px;
 }
 
 /* Section Styles */
