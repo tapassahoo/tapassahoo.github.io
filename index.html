@@ -8,11 +8,11 @@
 </head>
 <body>
 
-  <!-- Navigation Bar -->
 <nav>
   <div class="nav-container">
     <div class="logo">Dr. Tapas Sahoo</div>
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <!--<div class="menu-toggle" id="menu-toggle">&#9776;</div>-->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     <ul id="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#education">Education</a></li>
@@ -44,7 +44,8 @@
 
   <!-- Main Content -->
   <main>
- <section id="home" class="section active">
+ <!--<section id="home" class="section active">-->
+ <section id="home">
     <h2>Welcome</h2>
     <p>Welcome to the Quantum Molecular Dynamics Lab. Our focus lies in quantum dynamics, entanglement entropy, and algorithmic developments for chemical systems.</p>
   </section>
@@ -59,8 +60,10 @@
     </section>
 	-->
 
+
     <!-- Education Section -->
-	<section id="education" class="section">
+	<!--<section id="education" class="section">-->
+	<section id="education" style="display: none;">
 	  <h2>Education</h2>
 	  <!--<ul class="education-list">-->
 	  <ul >
