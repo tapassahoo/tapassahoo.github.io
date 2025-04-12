@@ -1,88 +1,64 @@
-:root {
-  --bg-color: #ffffff;
-  --text-color: #222;
-  --accent-color: #2a6592;
-  --heading-color: #1e3d59;
-  --border-color: #ccc;
-  --font-serif: 'Georgia', serif;
-}
-
 body {
-  font-family: var(--font-serif);
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  font-family: 'Georgia', serif;
+  background-color: #f4f4f9;
+  color: #222;
+  margin: 0;
+  padding: 0;
   line-height: 1.6;
-  max-width: 900px;
-  margin: auto;
-  padding: 2em;
 }
 
-h1, h2, h3 {
-  color: var(--heading-color);
-  margin-top: 1.5em;
-}
-
-h1 {
+header {
+  background-color: #004080;
+  color: white;
+  padding: 20px;
   text-align: center;
-  font-size: 2.2em;
-  margin-bottom: 0.2em;
 }
 
-h2 {
-  font-size: 1.5em;
-  border-bottom: 2px solid var(--border-color);
-  padding-bottom: 0.2em;
-  margin-bottom: 1em;
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
 }
 
-.contact {
-  text-align: center;
-  font-size: 0.95em;
-  color: var(--accent-color);
-  margin-bottom: 2em;
+header p {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-top: 5px;
 }
 
-p {
-  text-indent: 2em;
-  text-align: justify;
-  margin-bottom: 1em;
+.contact p {
+  margin: 4px 0;
+  font-size: 0.95rem;
 }
 
-ul {
-  padding-left: 1.5em;
-}
-
-li {
-  margin-bottom: 0.5em;
+main {
+  padding: 20px 40px;
 }
 
 .section {
-  margin-bottom: 2em;
+  margin-bottom: 30px;
 }
 
-a {
-  color: var(--accent-color);
-  text-decoration: none;
+.section h2 {
+  border-bottom: 2px solid #004080;
+  color: #004080;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
 }
 
-a:hover {
-  text-decoration: underline;
+ul {
+  list-style: disc inside;
+  margin-top: 10px;
+  padding-left: 15px;
 }
 
-.footer {
-  margin-top: 4em;
+ul li {
+  margin-bottom: 8px;
+}
+
+footer {
+  background-color: #004080;
+  color: white;
   text-align: center;
-  font-size: 0.9em;
-  color: #666;
-}
-
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-color: #1e1e1e;
-    --text-color: #ddd;
-    --heading-color: #e0e0e0;
-    --border-color: #444;
-    --accent-color: #5ba9e1;
-  }
+  padding: 10px;
 }
