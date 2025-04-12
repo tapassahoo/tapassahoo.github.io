@@ -253,3 +253,12 @@ a:hover {
   text-align: center;
   font-style: italic;
 }
+
+section {
+  display: none;
+}
+
+section.active {
+  display: block;
+}
+
