@@ -172,6 +172,53 @@ section {
   margin: 0 auto;
 }
 
+.content-section {
+  padding: 2rem;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+}
+
+.education-item {
+  margin-bottom: 1.8rem;
+  padding-left: 1rem;
+  border-left: 4px solid #3498db;
+}
+
+.education-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.2rem;
+  color: #34495e;
+}
+
+.institution {
+  font-weight: 500;
+  color: #555;
+}
+
+.details {
+  font-style: italic;
+  color: #777;
+  margin: 0.3rem 0;
+}
+
+.year {
+  color: #888;
+  font-size: 0.95rem;
+}
+
 
 ul {
   list-style-type: none;
