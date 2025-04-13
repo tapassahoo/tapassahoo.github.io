@@ -370,3 +370,35 @@ section {
     font-size: 1.1rem;
 }
 
+
+#links {
+  padding: 2rem;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.link-category {
+  margin-bottom: 2rem;
+}
+
+.link-category h2 {
+  color: #1d3557;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.2rem;
+}
+
+.link-category ul {
+  list-style-type: square;
+  padding-left: 1.2rem;
+}
+
+.link-category a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.link-category a:hover {
+  text-decoration: underline;
+}
+
