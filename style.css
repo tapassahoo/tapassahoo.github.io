@@ -60,29 +60,26 @@ nav {
 }
 
 #home {
-  background-image: url('background-image.jpg'); /* Adjust the path to your image */
+  background-image: url('background-image.jpg'); /* Adjust path as needed */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white; /* Optional: ensures text is readable */
-  padding: 60px 20px;
+  min-height: 100vh; /* Full viewport height */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  min-height: 100vh; /* Ensures the section fills the screen */
+
+  color: #ffffff; /* Ensures text is white */
+  padding: 60px 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Makes text readable on image */
 }
 
-#home {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5); /* Black with transparency */
+#home .home-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
   padding: 40px;
   border-radius: 10px;
-}
-
-#home.content-section {
-  color: #ffffff; /* white text */
-  text-align: center;
-  padding: 100px 20px;
-  background: rgba(0, 0, 0, 0.5); /* optional dark overlay */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* makes white text stand out more */
 }
 
 footer {
