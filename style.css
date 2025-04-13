@@ -70,6 +70,14 @@ nav {
   min-height: 100vh; /* Ensures the section fills the screen */
 }
 
+#home {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with transparency */
+  padding: 40px;
+  border-radius: 10px;
+}
+
+
 footer {
   background-color: #1c1c1c;
   color: white;
