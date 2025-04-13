@@ -262,3 +262,11 @@ form {
   }
 }
 
+section {
+  display: none;
+}
+
+#home {
+  display: block; /* Display the home section by default */
+}
+
