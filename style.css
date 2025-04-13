@@ -64,20 +64,20 @@ nav {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh; /* Full viewport height */
+  min-height: 100vh;
 
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 
-  color: #ffffff; /* Ensures text is white */
+  color: #ffffff;
   padding: 60px 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Makes text readable on image */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 #home .home-overlay {
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  background-color: rgba(0, 0, 50, 0.6); /* Deep blue transparent overlay */
   padding: 40px;
   border-radius: 10px;
 }
