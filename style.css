@@ -60,26 +60,14 @@ nav {
 }
 
 #home {
-  background-image: url('background-image.jpg'); /* Adjust path as needed */
+  background-image: url('background-image.jpg'); /* Adjust the path to your image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-
-  color: #ffffff;
+  color: white; /* Optional: ensures text is readable */
   padding: 60px 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-}
-
-#home .home-overlay {
-  background-color: rgba(0, 0, 50, 0.6); /* Deep blue transparent overlay */
-  padding: 40px;
-  border-radius: 10px;
+  text-align: center;
+  min-height: 100vh; /* Ensures the section fills the screen */
 }
 
 footer {
