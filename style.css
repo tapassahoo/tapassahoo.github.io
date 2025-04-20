@@ -60,7 +60,7 @@ nav {
 }
 
 #home {
-  background-image: url('background-image.jpg'); /* Adjust the path to your image */
+  background-image: url('images/background-image.jpg'); /* Adjust the path to your image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
