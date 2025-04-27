@@ -299,6 +299,21 @@ section {
     color: #333;
 }
 
+
+/* Style for section headings */
+.bio-section-heading {
+    color: #1d3557;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+	border-bottom: 1px solid #ccc;
+    padding-bottom: 0.2rem;           /* Padding below the heading */
+}
+
+/* Optional: Add some spacing between sections */
+.bio-details {
+    margin-bottom: 20px;
+}
+
 .bio-text p {
     margin-bottom: 15px; /* Increased space between the two <p> elements */
 }
