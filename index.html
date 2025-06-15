@@ -181,20 +181,33 @@
 			<!-- <li><a href="https://devhints.io/vim" target="_blank">Vim Cheat Sheet 4</a></li> -->
 			<!-- <li><a href="https://quickref.me/vim.html" target="_blank">Vim Cheat Sheet 5</a></li> -->
 
-			<li><a href="#" onclick="toggleIframe(); return false;">Extract Any Block in Vim and Save to a New File</a></li>
 
-			<div id="iframe-container" style="display: none; margin-top: 10px;">
-			  <iframe src="extract_block_vim_interactive.html" width="100%" height="600px" style="border: 1px solid #aaa;"></iframe>
-			</div>
+		  <li>
+			<a href="#" onclick="toggleIframe('iframe1'); return false;">
+			  Extract Any Block in Vim and Save to a New File
+			</a>
+		  </li>
+		  <div id="iframe1" style="display: none; margin-top: 10px;">
+			<iframe src="extract_block_vim_interactive.html" width="100%" height="600px" style="border: none;"></iframe>
+		  </div>
 
-			<script>
-			function toggleIframe() {
-			  const container = document.getElementById("iframe-container");
-			  container.style.display = (container.style.display === "none") ? "block" : "none";
-			}
-			</script>
-
+		  <li>
+			<a href="#" onclick="toggleIframe('iframe2'); return false;">
+			  Find .xyz Files in Directory Tree (Vim Style)
+			</a>
+		  </li>
+		  <div id="iframe2" style="display: none; margin-top: 10px;">
+			<iframe src="find_xyz_report.html" width="100%" height="600px" style="border: none;"></iframe>
+		  </div>
 		</ul>
+
+		<script>
+		function toggleIframe(id) {
+		  const frame = document.getElementById(id);
+		  frame.style.display = (frame.style.display === "none") ? "block" : "none";
+		}
+		</script>
+
 	</div>
 
 	<div class="link-category">
