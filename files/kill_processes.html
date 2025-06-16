@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Find .xyz Files in Directory Tree</title>
+  <style>
+    body {
+      background: #111;
+      color: #eee;
+      font-family: monospace;
+      padding: 1.5em;
+      line-height: 1.5;
+    }
+    h2 {
+      color: #66ccff;
+      font-size: 1.2em;
+    }
+    pre {
+      background: #1b1b1b;
+      padding: 1em;
+      border-radius: 6px;
+      margin-top: 1em;
+      white-space: pre-wrap;
+    }
+    button {
+      background: #222;
+      color: #ccc;
+      border: 1px solid #444;
+      padding: 0.4em 0.8em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.9em;
+    }
+    button:hover {
+      background: #333;
+      color: #fff;
+    }
+    .icon {
+      margin-right: 6px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Unix pipeline with process filtering and mass termination</h2>
+
+<button onclick="copyToClipboard()">
+  <span class="icon">📋</span>Copy Script
+</button>
+
+<pre id="bash-script">
+	ps aux | grep "[p]attern" | awk '{print $2}' | xargs -r kill -9
+</pre>
+
+<script>
+function copyToClipboard() {
+  const text = document.getElementById("bash-script").innerText;
+  navigator.clipboard.writeText(text).then(
+    () => alert("Script copied to clipboard!"),
+    () => alert("Failed to copy.")
+  );
+}
+</script>
+
+</body>
+</html>
+

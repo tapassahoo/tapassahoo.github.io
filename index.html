@@ -181,14 +181,13 @@
 			<!-- <li><a href="https://devhints.io/vim" target="_blank">Vim Cheat Sheet 4</a></li> -->
 			<!-- <li><a href="https://quickref.me/vim.html" target="_blank">Vim Cheat Sheet 5</a></li> -->
 
-
 		  <li>
 			<a href="#" onclick="toggleIframe('iframe1'); return false;">
 			  Extract Any Block in Vim and Save to a New File
 			</a>
 		  </li>
 		  <div id="iframe1" style="display: none; margin-top: 10px;">
-			<iframe src="extract_block_vim_interactive.html" width="100%" height="600px" style="border: none;"></iframe>
+			<iframe id="frame1" src="files/extract_block_vim_interactive.html" style="border: none; width: 100%;"></iframe>
 		  </div>
 
 		  <li>
@@ -197,16 +196,43 @@
 			</a>
 		  </li>
 		  <div id="iframe2" style="display: none; margin-top: 10px;">
-			<iframe src="find_xyz_report.html" width="100%" height="600px" style="border: none;"></iframe>
+			<iframe id="frame2" src="files/find_xyz_report.html" style="border: none; width: 100%;"></iframe>
+		  </div>
+
+		  <li>
+			<a href="#" onclick="toggleIframe('iframe3'); return false;">
+			  Unix pipeline with process filtering and mass termination
+			</a>
+		  </li>
+		  <div id="iframe3" style="display: none; margin-top: 10px;">
+			<iframe id="frame3" src="files/kill_processes.html" style="border: none; width: 100%;"></iframe>
 		  </div>
 		</ul>
 
-		<script>
-		function toggleIframe(id) {
-		  const frame = document.getElementById(id);
-		  frame.style.display = (frame.style.display === "none") ? "block" : "none";
+	<script>
+	function toggleIframe(id) {
+	  const div = document.getElementById(id);
+	  const iframe = div.querySelector("iframe");
+
+	  if (div.style.display === "none") {
+		div.style.display = "block";
+	  } else {
+		div.style.display = "none";
+		return;
+	  }
+
+	  iframe.addEventListener("load", function () {
+		try {
+		  const doc = iframe.contentDocument || iframe.contentWindow.document;
+		  if (doc) {
+			iframe.style.height = doc.body.scrollHeight + "px";
+		  }
+		} catch (e) {
+		  console.warn("Cannot access iframe content. Possibly cross-origin.");
 		}
-		</script>
+	  });
+	}
+	</script>
 
 	</div>
 
