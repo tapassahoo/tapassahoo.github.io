@@ -425,6 +425,25 @@ section {
     padding-bottom: 0.2rem;           /* Padding below the heading */
 }
 
+.pub-list {
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-left: 1.2rem;
+    padding-left: 0.5rem;
+}
+
+.pub-list li {
+    margin-bottom: 1.2rem;
+}
+
+.pub-list strong {
+    font-weight: 600;
+}
+
+.pub-list em {
+    font-style: italic;
+}
+
 /* Global styling for all unordered lists */
 ul {
     list-style-type: square; /* Sets the list item marker to square */

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Publications — Tapas Sahoo</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background: #ffffff; color: #000; }
+    h1 { font-size: 1.8rem; margin-bottom: 20px; }
+    .pub-item { margin-bottom: 22px; padding-bottom: 12px; border-bottom: 1px solid #ccc; }
+    .title { font-weight: bold; font-size: 1rem; margin-bottom: 5px; }
+    .journal { font-style: italic; }
+    .meta { margin: 3px 0; }
+    a { color: #0033aa; text-decoration: none; }
+    .bibtex { background: #f5f5f5; padding: 10px; font-family: monospace; font-size: 0.9rem; white-space: pre-wrap; display: none; border: 1px solid #ccc; }
+    button { padding: 4px 8px; font-size: 0.8rem; margin-right: 5px; }
+  </style>
+</head>
+<body>
+  <h1>Selected Publications</h1>
+
+  <!-- Publication 1 -->
+  <div class="pub-item">
+    <div class="title">Effect of neighbouring molecules on ground-state properties of many-body polar linear rotor systems</div>
+    <div class="meta"><span class="journal">Molecular Physics</span>, 2023.</div>
+    <div class="meta">DOI: <a href="https://doi.org/10.1080/00268976.2023.2242967" target="_blank">10.1080/00268976.2023.2242967</a></div>
+    <div class="meta">Impact Factor: 1.6 · Q3</div>
+    <button class="copyBib">Copy BibTeX</button>
+    <button class="toggleBib">BibTeX</button>
+    <div class="bibtex">
+@article{sahoo_gangopadhyay_2023,
+  author = {Tapas Sahoo and Gautam Gangopadhyay},
+  title = {Effect of neighbouring molecules on ground-state properties of many-body polar linear rotor systems},
+  journal = {Molecular Physics},
+  year = {2023},
+  doi = {10.1080/00268976.2023.2242967}
+}
+    </div>
+  </div>
+
+  <!-- Publication 2 -->
+  <div class="pub-item">
+    <div class="title">The effect of surface temperature on H₂/D₂(v=0, j=0)–Ni(100) scattering processes</div>
+    <div class="meta"><span class="journal">Molecular Physics</span>, 2015.</div>
+    <div class="meta">DOI: <a href="https://doi.org/10.1080/00268976.2015.1074741" target="_blank">10.1080/00268976.2015.1074741</a></div>
+    <div class="meta">Impact Factor: 1.6 · Q3</div>
+    <button class="copyBib">Copy BibTeX</button>
+    <button class="toggleBib">BibTeX</button>
+    <div class="bibtex">
+@article{mandal2015effect,
+  author = {Mandal, S. and Sahoo, T. and Ghosh, S. and Adhikari, S.},
+  title = {The effect of surface temperature on H₂/D₂(v=0, j=0)-Ni(100) scattering processes},
+  journal = {Molecular Physics},
+  year = {2015},
+  doi = {10.1080/00268976.2015.1074741}
+}
+    </div>
+  </div>
+
+  <!-- Publication 3 -->
+  <div class="pub-item">
+    <div class="title">The effect of surface temperature for the scattering of D₂(v=0, j=0)–Cu(111)</div>
+    <div class="meta"><span class="journal">Journal of the Indian Chemical Society</span>, 2015.</div>
+    <div class="meta">Impact Factor: 3.2 · Q4</div>
+    <button class="copyBib">Copy BibTeX</button>
+    <button class="toggleBib">BibTeX</button>
+    <div class="bibtex">
+@article{Mandal2015291,
+  author = {Mandal, S. and Sahoo, T. and Ghosh, S. and Adhikari, S.},
+  title = {The effect of surface temperature for the scattering of D₂(v=0, j=0)-Cu(111)},
+  journal = {Journal of the Indian Chemical Society},
+  year = {2015}
+}
+    </div>
+  </div>
+
+  <!-- Publication 4 -->
+  <div class="pub-item">
+    <div class="title">The effect of phonon modes and electron–hole pair couplings on molecule–surface scattering processes</div>
+    <div class="meta"><span class="journal">Journal of Theoretical and Computational Chemistry</span>, 2015.</div>
+    <div class="meta">DOI: <a href="https://doi.org/10.1142/S0219633615500285" target="_blank">10.1142/S0219633615500285</a></div>
+    <div class="meta">Impact Factor: 2.0 · Q3</div>
+    <button class="copyBib">Copy BibTeX</button>
+    <button class="toggleBib">BibTeX</button>
+    <div class="bibtex">
+@article{mandal2015effectjtcc,
+  author = {Mandal, S. and Sahoo, T. and Ghosh, S. and Adhikari, S.},
+  title = {The effect of phonon modes and electron--hole pair couplings on molecule--surface scattering processes},
+  journal = {Journal of Theoretical and Computational Chemistry},
+  year = {2015},
+  doi = {10.1142/S0219633615500285}
+}
+    </div>
+  </div>
+
+<script>
+  document.querySelectorAll('.toggleBib').forEach((btn, i) => {
+    btn.addEventListener('click', () => {
+      const bib = document.querySelectorAll('.bibtex')[i];
+      bib.style.display = bib.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
+
+</body>
+</html>
