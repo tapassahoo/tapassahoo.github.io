@@ -59,45 +59,49 @@ nav {
   }
 }
 
+
 #home {
-  background-image: url('images/background-image.jpg'); /* Adjust the path to your image */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white; /* Optional: ensures text is readable */
-  padding: 60px 20px;
-  text-align: center;
-  min-height: 100vh; /* Ensures the section fills the screen */
+    background-image: url('images/background-image.jpg'); /* adjust path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* start from top */
+    align-items: center;
+    text-align: center;
+
+    /* push content slightly down */
+    padding-top: 150px;  /* adjust value as needed */
 }
 
 .ruby-metal {
     background: linear-gradient(
         45deg,
-        #b00020,
-        #e63946,
-        #ff6b6b,
-        #e63946,
-        #b00020
+        #FFD700,
+        #FFC700,
+        #FFB700,
+        #FFD700
     );
     -webkit-background-clip: text;
-    color: transparent;
+    -webkit-text-fill-color: transparent;
     font-weight: 900;
     letter-spacing: 1px;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.35);
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
 
-/* Large heading */
+
 #home h1.ruby-metal {
-    font-size: 3.5rem;      /* increase size */
-    margin-bottom: 10px;
+    font-size: 3.5rem;
+    margin-bottom: 20px; /* space between h1 and p */
 }
 
-/* Subtitle text */
 #home p.ruby-metal {
-    font-size: 1.6rem;      /* increase size */
+    font-size: 1.6rem;
     font-weight: 600;
 }
-
 
 footer {
   background-color: #1c1c1c;
