@@ -70,6 +70,16 @@ nav {
   min-height: 100vh; /* Ensures the section fills the screen */
 }
 
+.gold-text {
+    color: #FFD700;   /* Golden Yellow */
+}
+
+
+.gold-on-white {
+    color: #DAA520;   /* Goldenrod - looks perfect on white */
+    font-weight: 600; /* Slightly bold for clarity */
+}
+
 
 footer {
   background-color: #1c1c1c;
