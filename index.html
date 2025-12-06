@@ -589,6 +589,7 @@
   </div>
   <div class="footer-bottom">
     <p>&copy; 2025 Dr. Tapas Sahoo. All rights reserved.</p>
+	<p>Last updated: <span id="lastUpdated"></span></p>
     <button onclick="scrollToTop()" class="scroll-top-btn">↑</button>
   </div>
 </footer>
@@ -614,6 +615,19 @@
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+</script>
+
+
+<script>
+    const date = new Date(document.lastModified);
+    const formatted = date.toLocaleString('en-IN', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit'
+    });
+    document.getElementById("lastUpdated").textContent = formatted;
 </script>
 
 </body>
