@@ -79,19 +79,17 @@ nav {
 
 .ruby-metal {
     background: linear-gradient(
-        45deg,
-        #FFD700,
-        #FFC700,
-        #FFB700,
-        #FFD700
+		45deg,
+        #FFEB3B,  /* medium yellow */
+        #FDD835,  /* slightly deeper yellow */
+        #FFEB3B
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 900;
     letter-spacing: 1px;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* stronger shadow for contrast */
 }
-
 
 #home h1.ruby-metal {
     font-size: 3.5rem;
