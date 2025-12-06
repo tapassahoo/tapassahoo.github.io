@@ -438,6 +438,21 @@ section {
     margin-bottom: 1.2rem;
 }
 
+/* Make the first line (title) inside each publication bold */
+.publication strong:first-of-type {
+    font-weight: bold;
+}
+
+/* Ensure normal text except first line */
+.publication {
+    font-weight: normal;
+}
+
+/* Automatically bold only the first line of each publication item */
+.publication::first-line {
+    font-weight: bold;
+}
+
 /* Global styling for all unordered lists */
 ul {
     list-style-type: square; /* Sets the list item marker to square */
